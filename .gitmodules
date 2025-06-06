@@ -1,33 +1,7 @@
-[submodule "3rd/LuaGlue"]
-	path = 3rd/LuaGlue
-	url = https://github.com/moneymanagerex/LuaGlue.git
-[submodule "3rd/cgitemplate"]
-	path = 3rd/cgitemplate
-	url = https://github.com/moneymanagerex/html-template.git
-[submodule "3rd/ChartNew.js"]
-	path = 3rd/ChartNew.js
-	url = https://github.com/FVANCOP/ChartNew.js
-[submodule "database"]
-	path = database
-	url = https://github.com/moneymanagerex/database
-[submodule "3rd/rapidjson"]
-	path = 3rd/rapidjson
-	url = https://github.com/Tencent/rapidjson
-[submodule "3rd/wxsqlite3"]
-	path = 3rd/wxsqlite3
-	url = https://github.com/utelle/wxsqlite3.git
-[submodule "3rd/lua"]
-	path = 3rd/lua
-	url = https://github.com/lua/lua.git
-[submodule "3rd/apexcharts.js"]
-	path = 3rd/apexcharts.js
-	url = https://github.com/apexcharts/apexcharts.js.git
-[submodule "themes"]
-	path = themes
-	url = https://github.com/moneymanagerex/themes.git
-[submodule "3rd/fmt"]
-	path = 3rd/fmt
-	url = https://github.com/fmtlib/fmt
-[submodule "general-reports"]
-	path = general-reports
-	url = https://github.com/moneymanagerex/general-reports
+[submodule "monero"]
+	path = monero
+	url = https://github.com/monero-project/monero
+	ignore = all
+[submodule "external/quirc"]
+	path = external/quirc
+	url = https://github.com/dlbeer/quirc/
