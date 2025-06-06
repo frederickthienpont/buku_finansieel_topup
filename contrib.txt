@@ -1,0 +1,869 @@
+﻿## Active Developers
+
+Nikolay          [Nikolay]
+Whalley          [whalley]
+n-stein          [n-stein]
+Gabriele         [gabriele-v]
+Lisheng          [guanlisheng]
+James            [siena123]
+Stefano          [stef145g]
+Pat              [omalleypat]
+
+=======================================
+
+## Translators
+
+Visit [Crowdin](https://crowdin.com/project/moneymanagerex/) to add new, or contribute to existing, translations.
+
+### Albanian
+Artur Gjevori
+
+### Arabic
+Ali AlMubarak
+
+### Belarusian
+maximax
+
+### Bulgarian
+Ivan Gyokov
+Poltargaista
+
+### Catalan
+linuxdcat
+
+### Chinese (Simplified)
+Liu Ming
+
+### Chinese (Traditional)
+Kysouke
+
+### Croatian
+Goran Bobanovic
+
+### Czech
+Josef Remes
+PepaR
+
+### Dutch
+Theo Kamphuis
+PeCe
+
+### Dutch (Belgian)
+Rol
+wimvhs
+
+### English (United Kingdom)
+mcrossley
+
+### French
+Berry As
+Jean-Christophe
+bipop
+drambeau
+Ben
+Ghislain Baudichaud
+phira
+
+### German
+Renato
+Schrempfi
+goe
+STiGMaTa_ch
+Kai Kajus Noack
+
+### Greek
+Panagiotis Pentzeridis
+Panagiotis Sapikas
+Polvar
+
+### Hebrew
+Avi Markovitz
+
+### Hindi
+Ankur Jain
+
+### Hungarian
+Csaba
+Zoltan Levardy [zlevardy]
+Toroka
+Óvári
+
+### Indonesian
+Dindin
+
+### Italian
+Maurizio [Mau13]
+Claudio
+
+### Japanese
+Tasuku Sasaki
+
+### Korean
+DevAny KR
+
+### Lithuanian
+akmc
+
+### Norwegian
+Fredrik Strand
+Torbjorn Kvande
+
+### Polish
+Damian_pl
+Andrzej
+Jerzy Machnicki 
+
+### Portuguese (Brazilian)
+Jose Carlos
+Daniel Cunha de Almeida
+
+### Portuguese (Portugal)
+Fatela
+Nuno Santos
+
+### Romanian
+Munteanu
+Florin
+
+### Russian
+KarmaSV
+Nikolay
+Churzzz
+Vadim
+
+### Serbian (Cyrillic)
+Anonymous
+
+### Slovak
+Abadyba
+Misko B
+
+### Spanish
+jorgeb
+Javier
+Roberto
+
+### Swedish
+tomastomas
+
+### Tamil
+Gopi Gopalakrishnan
+Muguntharaj Subramanian
+
+### Turkish
+Murat Bilgen
+
+### Ukrainian
+Leonid Shturma
+
+### Vietnamese
+Nicky
+Luu Cong Thanh
+Toan [nktvnvn]
+
+=======================================
+
+## User Manual
+
+### English
+Stefano 	 [stef145g]
+Tina P
+Terry Wick
+
+### French
+catacotox
+phira 	 [phira]
+
+### German
+Renato 	 [Renato]
+
+### Hungarian
+Toroka 	 [Toroka]
+
+### Italian
+Maurizio 	 [Mau13]
+
+### Polish
+Damian_pl
+
+### Russian 
+Nikolay 	 [Nikolay]
+
+### Spanish
+jorgeb
+kolmo7
+
+=======================================
+
+## Art and Icons
+[SVG Repo](https://www.svgrepo.com)
+
+---------------------------------------
+## Sponsors
+
+### 2024
+Renato
+Jarius Elliott
+Michael Ellis
+Constantin Georgescu
+Jose Manuel Marrero León
+Sven Wiesner
+Francesco Orabona
+Damon Achey
+Manuel Mayr
+David Coons
+Markus Egg
+Tobias Dach
+Francisco Fos Ros
+Marco Fusini
+Rafael Tappe Maestro
+Robert D Quinlan
+Roger Gimbrere
+Stefano Ducati
+Juan de Arriba
+Michel Limenitakis
+Urias Jimenez
+Mihkel Loderaud
+Adam Leinss
+Mariano Rossello
+Alberto Ghilardi
+Daniel Vittet
+John Weaving
+Peter Hulm
+Angel Fernandez
+Carol Williams
+Herve Farge
+Ricardo Valencia Melendez
+Jill Solomon
+James Rogers
+Harold Horton
+Vijay Varadarajan
+Gordon Bassett
+Cornelio Achille
+Ricardo Iturriaga
+Ciro Caruso
+
+### 2023
+Renato
+Michael Ellis
+Constantin Georgescu
+Juan De Arriba
+Francesco Orabona
+Michael Copeland
+Andrea Contini
+Jean-Robert Simard
+Ernie Turner
+Jean-Michel Maritan
+Francisco Fos Ros
+John Ditchfield
+Marc Decock
+Tom Schulte
+Roger Gimbrere
+Jean Jacques Pons
+Giuseppe Maffione
+George Cucak
+Graham Young
+Jose Manuel Marrero León
+Morris Stout
+Benjamin Julien Caplet
+Duncan Livingstone
+Carlos Pérez-Adsuar Antón
+Kevin Pengel
+Kai Regenstein
+Massimo Palo
+Michael Brede
+Сергій Погудо
+Dollar Saver Express
+Cristian Nardelli
+Dan Miller
+Jairo Henrique Da Silva
+Vasilii Repkin
+Frank Sierowski
+Robert Flounders
+Jarius Elliott
+Roy Rutter
+Seamus McGuire
+Regis Arblade
+Pablo De La Mota Ramos
+Otto Kindelmayer
+Robert Sjursen
+Adam Gallagher
+John David Bowman
+Glenn Fowler
+Stanislav Gusev
+Lucano Grascelli
+Peter Csernak
+Artem Odulov
+Andreas Goette
+
+### 2022
+Renato
+Sven Wiesner
+Michael Ellis
+Martin Mannarella
+Peter Hulm
+Roland MORITZ
+Marco biondi
+Roger Gimbrere
+Roberto Luciani
+Cesar Tadeu Descardeci
+Brian Crow
+Paolo Pagano
+Orlando Ernesto Lopez D
+Marcus Egg
+Edward Hill
+David Goodfellow
+Geoffrey Mulhall
+Michael Keeling
+Jose Manuel Marrero León
+Marco Giuseppe Stimolo
+Emmanouil Mastropetros
+Janis Dankowski
+Boris Varshavsky
+Adjutant Young
+Tom Vergotte
+Philip Hart
+Giuseppe Conti
+Pat Tiller McCoy
+Marlon Morales Arango
+Davide Tartari
+Jill Solomon
+Alberto Ghilardi
+Bartłomiej Korban
+John Weaving
+Rushikesh Jukar
+Ruben Fernandes
+Sabrina Blanc
+Martin Goike
+Michael Smith
+Antonio Navarro Sánchez
+Alain Barussaud
+Emanuele Pizzurno
+William McCracken
+Timur Yilmaz
+Jose Manuel Marrero León
+
+### 2021
+Renato
+Thomas Gretler
+Carmel George
+Dimitrios Valsamis
+James Rogers
+Jesse Gac
+Michael Ellis
+François Maréchal
+Peter Hulm
+Wiesław Stawiszyński
+Michel SERIN
+Gérard AGNESIO
+Matteo Rinaldi
+John David Bowman
+Jose Manuel Marrero León
+Jean-Francois Zahnen
+John Weaving
+Markus Egg
+N Vincent
+Paul Moody
+Roger Chandler
+William R Detamore
+Alexander Habegger
+Alessandro Guarnieri
+David Coons
+David Morrison
+George Cucak
+Keith Kollias
+Kenneth Wiggers
+Lucas Lopez Azcona
+Officer Young
+Pedro Rocha
+Raleigh Meade
+Stelios Stylianou
+Thierry PAPINOT
+Werner Hennersdorf
+Jiří Vyskočil
+Roger Spindler
+Edgar Lloren
+Xiaoyun Wang
+Brian Crow
+Glenn Fowler
+Dario Bavicchi
+Jean-michel LOUISET
+NICOLA QUARTO AMARETTI
+Werner Ammann
+Michael Kerle
+Antonio Navarro Sánchez
+Tim Carden
+Jérémy DUFRAISSE
+Jean-michel BAUD
+Antonio Adam
+EMMANOUIL MASTROPETROS
+Frédéric Vandendris
+Gerald Mead
+Hermann Fessler
+Israel Corbo
+Massimo casaccia
+Nelson Vladimiro Nunes Amaral
+Nicolas Arzamendia
+Philippe Andurao
+Sean Vinaja
+Timothy Pope
+Alberto Gäumann - Reumer
+Craig Shirley
+Peter Pfister
+David Lehmann
+Fr. Cycus Chungu
+Roger Gimbrere
+Mark Wilkerson
+Neil Cottis
+Glenn Fowler
+Luisa Guglielmetti
+Rafael Moreira
+Samuel Sagon
+Francisco Fos Ros
+Marco Giuseppe Stimolo
+Marco Stimolo
+Doru Stoica
+Aaron Lim
+Ian Rowe
+Jonathan Thomas
+RICARDO ITURRIAGA
+José Moya Iglesias
+Giuseppe Conti
+
+### 2020
+Renato
+Digital IT Consultant
+Adam Gallagher
+Dave Wetzler
+Dorothy Dean
+Gary Roush
+Neil Vincent
+Richard Watts
+Vincent Sinha
+Ruedi Kehl
+Michael Sloan
+Frederick Hansen
+Michel GRANDCOLAS
+Michael Ellis
+Martin Mannarella
+Gisele Turcotte
+Raymond D Mangrum
+Thomas Smith
+Carlo Cini
+Claude VINCENT
+Ehab Fanous
+Gregory Majewski
+Hubert Behmer
+John van Someren
+LeRoy Strohl
+MARCO CANEPA
+Tim Davies
+Kurt Tremp
+Michael Mileo
+Roger Gimbrere
+Brian Crow
+Eric PINCHON
+Francesco orabona
+Jan Salomons
+SERIN MICHEL
+John Taylor
+Christian BELAIR
+Betsy & Chuck
+Dennis Smith
+EMMANOUIL MASTROPETROS
+Eliezer Gomez Gomez
+James Pearsall
+Jean-Benoît cerino
+John Bax
+John David Bowman
+John Weaving
+Kieron McGeever
+Marcella Day
+Maros Chromcik
+Michael Wraight
+Officer Young
+Renaud Cadet
+Sergio Zanatta
+Andreas Mueller
+Peter Pfister
+Michael Lee
+Ricardo Talarico
+Glenn Fowler
+Joan Warren
+Alan Millar
+Eric Laval
+Kostas Fatolas
+Roberto pasqui
+Sasinidu Fonseka
+Gerald Mead
+
+### 2019
+Leon Hall
+Carlos ESTEVAO
+Martin Mannarella
+Bob Applegate
+Dorothy Dean
+Jörg Jan Kock
+David Kricker
+John Stenson
+Alexander Prog
+Peter Csernak
+Peter Hulm
+Brian Crow
+Fabrice BERNIER
+Gerd Scherer
+Peter Laubert
+Robert D Quinlan
+Jon Hyams
+Lorenzo Giustino
+Dan Miller
+Renaud Cadet
+
+### 2018
+Harold Kron
+Martin Mannarella
+George Cucak
+Daniel DA SILVA
+Roger Chandler
+Andreas Löwenhagen
+Gisèle Turcotte
+Betsy & Chuck
+Hubert Behmer
+Janine Pepi
+Karin Goodfellow
+Pascal Revéreault
+Ryszard Goń
+Philippe CURTIL
+Yusri Latib
+Brian Crow
+Jean Marc Berlandi
+John Weaving
+BRET ADAMS
+Carlos ESTEVAO
+DSBsoft
+Eliezer Gomez Gomez
+Fabrizio Bongiovanni
+Giovanni Bellinghieri
+Graham Young
+Jonathan Garcia
+Phil Alsop
+Stephen Pheasant
+Vito Croce
+Lina Mažulė
+Balasubramanian N
+CodeCape
+Eduardo Claudio Mallet
+Nikki Isabel Laynes
+ISABELLE CASTANG
+Jose A Sanz Martín
+Etta niswonger
+Jesus Marcelino Medina Sevilla
+John Toumpis
+Matteo Cigola
+Ricardo Filipe P Faustino
+Lorenzo Giustino
+Paulo Silveira Goncalves
+Claudio Bottieri
+Hugo Sottomayor
+
+### 2017
+Willem Dubelaar
+Kenneth Drobnack
+Ann French
+GIUSEPPE MAFFIONE
+Aldo Cadloni
+Bronislav Bagar
+Richard Connell
+Betsy & Chuck
+Don Taylor
+Enrico De Tomasi
+Gisèle Turcotte
+Robert Van Etterijck
+Paul Greig
+Phillip Andrew
+Andreas Löwenhagen
+Daniel CAUVIN
+David Stacey
+Douglas R Taylor
+Dr John Carpenter
+Gilles Biette
+Guillaume Levasseur
+Hubert Behmer
+Jeremy McEachron
+Michael Ellis
+Michel EVERS
+Santiago Durango
+William Doscher
+Barry Petersen
+John Stewart
+Brian Marstella
+Peter Pfister
+Luis Fernando Sturmer Da Rosa
+Gérard Mouscardès
+VSP AVVO
+Martin Berg
+Alexander Prog
+Darren Kelly
+Dausto Cobianchi
+David Coons
+ISABELLE CASTANG
+Jacqueline Hunter
+Jeffrey Pilling
+John Weaving
+Jose Manuel Marrero León
+Lorraine Haines
+Michel CARUEL
+Michel Patenaude
+Mimi Barbier
+Paolo Marchiori
+Vincent Barbour
+Michelle Kamber
+Andrew Peter Grigg
+Carlos Eduardo Alonso
+Eduardo Claudio Mallet
+Ming Wai Tang
+Siew Yan Soon
+Yury Siamashka
+Jorge Luis Botero
+Jonathan Thomas
+Brian Crow
+Alfonso Caianiello
+Carlos Sousa
+Clifford Dawson
+Devin LaSalle
+Edgar Bazan Castaneda
+Francisco Fos Ros
+Gummarus Van Sand
+Manuel Azevedo
+Marek Rozenberg
+Martin Garside
+Raffaele Testera
+Sean Baber
+Simon Bleasdale
+Tobias Fischer
+Joel Delcompare
+MD PAMD ASHRAF
+Pornchai Krongsawatkul
+paulo silveira goncalves
+Luis Duarte
+Francesco Caccia
+
+### 2016
+Dorothy Dean
+Jean Paul Dion
+Gábor Glück
+Peter Helfer
+Del Hardesty
+Eric PINCHON
+Gisèle Turcotte
+Hany ElHawary
+Harvey Brewer
+VSP AVVO
+Vic Forte
+Andreas Löwenhagen
+Horst Weber
+Mark Balko
+Pinhas Gold
+Angela Ruyle
+Francois Verret
+Gary Ferland
+Horst Dewitz
+Hubert Behmer
+Ian Shaw
+Johannes Traxler
+Marius Raht
+thomas crawley
+Étienne Bourgeois
+Christophe Pot
+veli tokmen
+nasser kaviani
+Eduardo Siri
+Blair Boyle
+CARLOS MARTIN RECIO
+Christian Turier
+JHM Designs Publications
+Philip Cook
+Random Woodworking
+Robert Coverston
+Csaba Bihari
+Per Hovland
+Jeffrey Pilling
+Andras Radacsi
+Kennet Härmälä
+alberto ghilardi
+Athanasios Tsoutsaios
+BRET ADAMS
+Carlo Basile
+Clément Martin
+Emanuele Pizzurno
+Fabio Giorgieri
+H John Boeschen
+Irene Dunn
+James Mork
+Jesus Pinto Cosgaya
+Judith Campbell
+Michael Sirna
+Mimi Barbier
+Paolo Marchiori
+Pedro Pires
+sabine Duchesne
+ĽUBOMÍR NIKOLÍNI
+Rudolf Leuenberger
+Sergii Stepanchuk
+Wiesław Stawiszyński
+Edgar Lloren
+Garry Smith
+MUN VO VU
+Robert Edser
+伊筠 錢
+José Hamilton Rosário
+Sean Baber
+A Kloosterman
+alain benzimra
+Annaclerio Cattelan
+Franck Vilenstein
+Jose Manuel Marrero León
+Massimo BORSETTO
+Osman Goni
+Steven Godfrey
+Marcin Magnus
+Gernie Melliza
+Halidou ROUAMBA
+Style Scissors
+Andinet Shiferaw
+sihar simbolon
+Juan Quintana
+Andrew Peter Grigg
+Richard Clegg
+Lisheng Guan
+Isabel Pires Monteiro
+
+### 2015
+Paul Croft
+Richard Watts
+Vincent Sinha
+Renato
+Urs Wuffli
+CHRISTIAN SCHOENENBERGER
+Michael Scutt
+Terence Hughes
+David Piears
+AF Christensen
+Bruno MAILLARD
+Christophe DEMETRIADIS
+Gregory Majewski
+Kieron McGeever
+Michael Cockshott
+Neo Affinis S.L.
+Stephen G Donald
+Krisztian Rada
+Kurt Tremp
+Александр Грицюк
+Steve Hefferman
+Carl Steinhauser
+Stephane Vitalis-brun
+Daniele Leucci
+Adam Gallagher
+Mogens Bjerg
+clarence weaver
+Emanuele Fabbri
+Erich Oswald
+Filippo Levati
+Guy SCHLOSSER
+Henry R
+JEAN GUILLEN
+JOSE MARIA ALVAREZ ORDOÑEZ
+Michele Chinellato
+Mick Gardner
+Nina Neuhaus
+Todd Smith
+Josef Remes
+Lukáš Novák
+Martin Kopecky
+Roman Riabenko
+SATER KLAUDIA GĄSIECKA
+Adam Bishop
+Leslie Shipp
+YI-YUN CHIEN
+Petr Prikryl
+Helen Mercer
+Thomas Prior
+Lucas Wronski
+Gianluca Federici
+giuseppe conti
+Kevin Hawkins
+Kevin Luken
+Olzo Franco Solano
+Stefan Andersson
+Terry Mort
+Balázs Terjék
+Heinrich Hasler
+Sezer Gülsay
+Yves Macherel
+Julio Gomez
+MADA GSM
+Patrick Eigensatz
+Atanas Vasilev
+Jiří Vyskočil
+ALIAKSANDR VAREIKA
+Wisnu Baskoro
+
+### 2014
+[CodeLathe LLC](http://www.tonido.com/)
+Geoff Mulhall
+fabio toffolo
+Michael Creswell
+Alain Rouault
+ALAIN SCHEIDLE
+David Tomlin
+Jasmine Glaese
+Nigel Sharpe
+Pedro Rocha
+Robert Gumpright
+SERGIO M. ARANDA
+Andy Boyce
+Joseph Miner
+Michel Aroichane
+barry plotkind
+Carl Bolling
+Chris Butler
+Franciscus Johannes van der Loo
+Frédéric Vandendris
+Glenn Silberman
+Javier LLaneza Braña
+Ken Huband
+marco secchi
+Matt Young
+Michael Schickenberg
+Jiri Pitzmos
+Sasa Mrvos
+Михаил Зайченко
+abdul malik
+LA CASTELLINA snc di Cappelli Faldi &...
+Martin Freye
+Ryan McAlister
+Xiaoyun Wang
+Gerardo Villalobos Pineda
+固 巩
+立胜 关
+
+### 2005-2013
+CodeLathe LLC
+William Thompson
+Robert Gumpright
+Jason McWhorter
+Stephen Murray
+Peter Robinson
+Steve Light
+Andrew Ireland
+David Adams
+[FusedNet](fusednetwork.com)
+William Metz
+Emmanuel Poirier
+Jamshed S
+Humberto Mendez Ocana
+Marco Berri
+Michelle Sarkis
+Gabriele Falistocco
+jchalmers
+willmetz

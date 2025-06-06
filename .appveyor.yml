@@ -1,0 +1,201 @@
+version: '{build}'
+clone_depth: 10 # to allow queued build jobs
+image:
+- Visual Studio 2022
+configuration:
+- Release
+# - Debug
+platform:
+- x64
+- Win32
+
+matrix:
+  fast_finish: true
+  allow_failures:
+  - configuration: Debug
+
+environment:
+  # use cache with 7z compression
+  APPVEYOR_CACHE_ENTRY_ZIP_ARGS: -t7z -m0=lzma -mx=9
+  # Use cygwin embeded gettext tools
+  path: '%path%;C:\cygwin64\bin'
+  # clcache config
+  clcVer: 4.1.0
+  CLCACHE_DISABLE: 1
+  # libcurl config
+  curlVer: 8_5_0
+  curldir: C:\curl-$(curlVer)
+  curlStatic: ON
+  # wxWidgets config
+  wxVer: 3.2.5
+  wxComp: 14x
+  wxwin: C:\wxWidgets-$(wxVer)-$(configuration)
+  wxShared: 0
+  wxURL: https://github.com/wxWidgets/wxWidgets/releases/download/v$(wxVer)
+  # Microsoft compiler options
+  CL: /MP
+  # Python version to use
+  pythonDir: C:\Python38-x64
+  matrix:
+  - { comp: 143, wxShared: 1 }
+
+init:
+# AppVeyor missing paths
+- if "%VS170COMNTOOLS%"=="" set "VS170COMNTOOLS=%ProgramFiles%\Microsoft Visual Studio\2022\Community\Common7\Tools\"
+ Set python path
+- cmd: set PATH=%pythonDir%;%pythonDir%\Scripts;%PATH%
+# Set developer command prompt
+- if %platform:~-2%==64 (set arch=amd64) else (set arch=amd64_x86)
+- set "vcvarsall=%VS170COMNTOOLS%..\..\VC\Auxiliary\Build\vcvarsall.bat"
+- call "%vcvarsall%" %arch%
+# detect MSVC compiler version
+- for /f "tokens=1,2 delims=." %%a in ('cl 2^>^&1 ^| findstr /r "\<[0-9][0-9]*\.[0-9][0-9]*\."') do (
+    for %%c in (%%a%%b) do set "clver=%%c"
+  )
+- echo %clver% > ..\MSVC_ver.txt
+# Set wxWidgets library paths
+- if %platform:~-2%==64 set wxSuff=_x64
+- set "wxLibFolder=%wxwin%\lib\vc%wxComp%%wxSuff%"
+- if %wxShared%==0 (set wxLibFolder=%wxLibFolder%_lib)
+  else (set wxLibFolder=%wxLibFolder%_dll)
+# Set curl library paths
+- set "curlLibFolder=%curldir%\vc%comp%%xp%%wxSuff%_%configuration%"
+- if %curlStatic%==ON (set curlLibFolder=%curlLibFolder%_lib)
+  else (set curlLibFolder=%curlLibFolder%_dll)
+# Print some info
+- echo %APPVEYOR_BUILD_WORKER_IMAGE% %platform% v%comp%%xp% %configuration% %arch%
+# clcache unique directory
+- set "CLCACHE_DIR=C:\clcache-%APPVEYOR_BUILD_WORKER_IMAGE%-%platform%-v%comp%%xp%"
+# prepare cmake options
+- set "gen=17 2022" & set "tool=v%comp%%xp%,host=x64"
+
+cache:
+- '%wxwin%\lib -> ..\MSVC_ver.txt'
+- '%curlLibFolder%'
+- '%CLCACHE_DIR% -> ..\MSVC_ver.txt'
+
+install:
+# setup clcache
+- nuget install clcache -Version %clcVer% -ExcludeVersion -Verbosity quiet
+- copy clcache\clcache-%clcVer%\clcache.exe clcache\clcache-%clcVer%\cl.exe
+- if exist %APPVEYOR_BUILD_FOLDER%\clcache\clcache-%clcVer%\cl.exe set "PATH=%APPVEYOR_BUILD_FOLDER%\clcache\clcache-%clcVer%;%PATH%"
+- clcache -s
+# wxWidgets, try to download pre-compiled version first
+- if %wxShared%==1 (
+    curl -fsL --fail-early
+      -O %wxURL%/wxMSW-%wxVer%_vc%wxComp%%wxSuff%_Dev.7z
+      -O %wxURL%/wxWidgets-%wxVer%-headers.7z &&
+    if %configuration%==Release
+      curl -fsL -O %wxURL%/wxMSW-%wxVer%_vc%wxComp%%wxSuff%_ReleaseDLL.7z
+  ) || exit 0
+- if not exist wxMSW-%wxVer%_vc%wxComp%%wxSuff%_Dev.7z
+    curl -fsSL -O %wxURL%/wxWidgets-%wxVer%.7z
+- 7z x -y "-o%wxwin%" wx*-%wxVer%*.7z
+# wxWidgets, build script from build/tools/msvs/officialbuild.bat
+- if %configuration%==Release set "wxConf=BUILD=release"
+- if not %platform:~-2%==64 set "wxFlags=CPPFLAGS=/arch:SSE CFLAGS=/arch:SSE"
+- if not exist "%wxLibFolder%" (
+    echo Building wxWidgets %wxVer% &
+    cd %wxwin%\build\msw &&
+    nmake /nologo /s /f makefile.vc %wxConf% COMPILER_VERSION=%comp%%xp%
+      TARGET_CPU=%platform% DEBUG_INFO=default SHARED=%wxShared% VENDOR=mmex %wxFlags%
+      wxUSE_UNSAFE_WXSTRING_CONV=0
+  )
+# libcurl
+- if %configuration%==Debug (
+    set "curlConf=-DENABLE_DEBUG=ON" &&
+    set "curlFlags=/Z7"
+  )
+- if not exist "%curlLibFolder%" (
+    echo Building libcurl %curlVer% &
+    git clone -q --depth=1 -b curl-%curlVer% --single-branch https://github.com/curl/curl.git %curldir%-src &&
+    mkdir %curldir%-src\build && cd %curldir%-src\build &&
+    (if %platform:~-2%==64 (
+      cmake -T %tool% -G "Visual Studio %gen%" -A %platform% %curlConf%
+        -DBUILD_CURL_EXE=OFF
+        -DHTTP_ONLY=ON
+        -DENABLE_MANUAL=OFF
+        -DCURL_USE_SCHANNEL=ON
+        -DBUILD_TESTING=OFF
+        -DCMAKE_INSTALL_PREFIX=%curlLibFolder% ..
+    ) else (
+      cmake -T %tool% -G "Visual Studio %gen%"
+        -DCMAKE_GENERATOR_PLATFORM=WIN32
+        -DBUILD_CURL_EXE=OFF
+        -DHTTP_ONLY=ON
+        -DENABLE_MANUAL=OFF
+        -DCURL_USE_SCHANNEL=ON
+        -DBUILD_TESTING=OFF
+        -DCMAKE_INSTALL_PREFIX=%curlLibFolder%
+        .. )) &&
+    cmake --build . --target install --config %configuration%
+      -- /maxcpucount /verbosity:minimal /nologo /p:PreferredToolArchitecture=x64 %curlFlags%
+  )
+
+before_build:
+- cd %APPVEYOR_BUILD_FOLDER%
+- git submodule update -q --init
+# regenerate database files
+- cd src\db &&
+  python ..\..\util\sqlite2cpp.py ..\..\database\tables.sql &&
+  python ..\..\util\sqliteupgrade2cpp.py ..\..\database\incremental_upgrade &&
+  del *.mmdbg sql*.sql 
+- cd %APPVEYOR_BUILD_FOLDER%
+
+build_script:
+- mkdir build & cd build
+- if %configuration%==Debug
+    set "cmake_def=-DCMAKE_INSTALL_DEBUG_LIBRARIES=ON -DCMAKE_INSTALL_DEBUG_LIBRARIES_ONLY=ON"
+- set "cmake_def=%cmake_def% -DCMAKE_PREFIX_PATH=%curlLibFolder%"
+- if %platform:~-2%==64 (
+    cmake --graphviz=mmex.dot -T %tool% -G "Visual Studio %gen%" -A %platform% %cmake_def% ..
+  ) else (
+    cmake --graphviz=mmex.dot -T %tool% -G "Visual Studio %gen%" -DCMAKE_GENERATOR_PLATFORM=WIN32 %cmake_def% ..
+  )
+- cmake --build . --target package --config %configuration%
+    -- /maxcpucount /verbosity:minimal /nologo /p:PreferredToolArchitecture=x64
+
+after_build:
+- clcache -s
+# rename and move
+- if %configuration%==Debug set "pkgsuff=-debug"
+- for %%f in (*.exe *.zip) do
+    if /i %%~xf==.exe (move "%%f" "..\%%~nf%xp%%pkgsuff%.exe")
+    else ( mkdir "%%~nf%xp%%pkgsuff%" &&
+        fsutil file createnew "%%~nf%xp%%pkgsuff%\mmexini.db3" 0 &&
+        7z a "%%f" "%%~nf%xp%%pkgsuff%\mmexini.db3" &&   
+        move "%%f" "..\%%~nf%xp%%pkgsuff%-portable.zip")
+
+test: off
+
+on_success:
+# don't cache downloaded wxWidgets binaries
+- if %wxShared%==1 (
+    if exist wxMSW-%wxVer%_vc14x%wxSuff%_Dev.7z
+      rmdir /s /q "%wxLibFolder%"
+  )
+
+artifacts:
+  - path: '*.exe'
+    name: installer
+  - path: '*.zip'
+    name: portable
+  - path: build\mmex.dot
+    name: build dependency graph
+
+deploy:
+  description: 'release created by AppVeyor CI'
+  provider: GitHub
+  auth_token: '%GitHub_auth_token%'
+  artifact: installer,portable
+  draft: true
+  prerelease: true
+  on:
+    appveyor_repo_tag: true # deploy on tag push only
+    configuration: Release  # Debug contains non-redist MS DLLs
+
+#notifications:
+#- provider: Slack
+#    auth_token:
+#      secure: kBl9BlxvRMr9liHmnBs14A==
+#    channel: '#appveyor'
