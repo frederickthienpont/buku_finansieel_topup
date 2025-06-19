@@ -50,7 +50,7 @@ install_requires = [
     'certifi',
     'cryptography>=1.2.3',
     'html5lib>=1.0.1',
-    'urllib3>=1.23,<2',
+    'urllib3>=1.23,<3',
     'pyreadline3; sys_platform == \'win32\'',
     'colorama>=0.4.6; sys_platform == \'win32\'',
 ]
